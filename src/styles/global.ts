@@ -28,6 +28,7 @@ export const GlobalStyles = createGlobalStyle `
     }
     body {
         line-height: 1;
+        background-color: ${props => props.theme.background}
     }
     ol, ul {
         list-style: none;
