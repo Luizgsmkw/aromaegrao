@@ -3,7 +3,7 @@ type coffeeType = 'TRADICIONAL' | 'COM LEITE' | 'ESPECIAL' | 'ALCOÓLICO' | 'GEL
 type coffeeName = 'Expresso Americano' | 'Árabe' | 'Café Com Leite' | 'Café Gelado' | 'Capuccino' | 'Chocolate Quente' | 'Cubano' | 'Expresso Cremoso' | 'Expresso Tradicional' | 'Havaiano' | 'Irlandês' | 'Latte' | 'Macchiato' | 'Mochaccino'
 
 
-export interface Coffe {
+export interface Coffee {
     name: coffeeName;
     description: string;
     type: coffeeType[];

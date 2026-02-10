@@ -13,10 +13,10 @@ import type_macchiato from '../assets/Type=Macchiato.png';
 import type_mochaccino from '../assets/Type=Mochaccino.png';
 import type_arabe from '../assets/Type=Árabe.png';
 
-import type { Coffe } from "../types/Coffee";
+import type { Coffee } from "../types/Coffee";
 
 
-export const coffeeData: Coffe[]  = [
+export const coffeeData: Coffee[]  = [
      {
         name: "Expresso Tradicional",
         description: "O tradicional café feito com água quente e grãos moídos",
@@ -77,7 +77,7 @@ export const coffeeData: Coffe[]  = [
         name: "Havaiano",
         description: "",
         price: 9.90,
-        type: [],
+        type: ['TRADICIONAL'],
         imgCoffe: type_havaiano
     },
     {
@@ -98,7 +98,7 @@ export const coffeeData: Coffe[]  = [
         name: "Macchiato",
         description: "",
         price: 9.90,
-        type: [],
+        type: ["TRADICIONAL"],
         imgCoffe: type_macchiato
     },
     {
