@@ -1,13 +1,14 @@
 
 import logo from '../../assets/logo.png';
 import { BadgeCart, BadgeLocation, ContainerBadges, ContainerHeader, ContainerImg, TextCity } from './styles';
-import {MapPin, ShoppingCart} from 'phosphor-react'
+import {MapPin, ShoppingCart} from 'phosphor-react';
+import {NavLink} from 'react-router-dom'
 
 export const Header = () => {
     return(
         <ContainerHeader>
             <ContainerImg>
-                <img src={logo} alt="Imagem da logo da aplicação" />
+                <NavLink to='/'><img src={logo} alt="Imagem da logo da aplicação" /></NavLink>
             </ContainerImg>
             <ContainerBadges>
                 <BadgeLocation>
@@ -15,7 +16,7 @@ export const Header = () => {
                     <TextCity>Belo Horizonte</TextCity>
                 </BadgeLocation>
                 <BadgeCart >
-                    <ShoppingCart weight="fill" />
+                    <NavLink to='/cart'><ShoppingCart weight="fill" /></NavLink>
                 </BadgeCart >
             </ContainerBadges>
         </ContainerHeader>
