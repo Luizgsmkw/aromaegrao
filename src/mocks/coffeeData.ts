@@ -18,6 +18,7 @@ import type { Coffee } from "../types/Coffee";
 
 export const coffeeData: Coffee[]  = [
      {
+        id: '1',
         name: "Expresso Tradicional",
         description: "O tradicional café feito com água quente e grãos moídos",
         price: 9.90,
@@ -25,6 +26,7 @@ export const coffeeData: Coffee[]  = [
         imgCoffe: type_expresso_tradicional
     },
       {
+        id: '2',
         name: "Expresso Americano",
         description: "Expresso diluído, menos intenso que o tradicional",
         price: 9.90,
@@ -32,6 +34,7 @@ export const coffeeData: Coffee[]  = [
         imgCoffe: type_expresso_americano
     },
     {
+        id: '3',
         name: "Expresso Cremoso",
         description: "Café expresso tradicional com espuma cremosa",
         price: 9.90,
@@ -39,6 +42,7 @@ export const coffeeData: Coffee[]  = [
         imgCoffe: type_expresso_cremoso
     },
     {
+        id: '4',
         name: "Café Com Leite",
         description: "Meio a meio de expresso tradicional com leite vaporizado",
         price: 9.90,
@@ -46,6 +50,7 @@ export const coffeeData: Coffee[]  = [
         imgCoffe: type_cafe_com_leite
     },
     {
+        id: '5',
         name: "Café Gelado",
         description: "",
         price: 9.90,
@@ -53,6 +58,7 @@ export const coffeeData: Coffee[]  = [
         imgCoffe: type_cafe_gelado
     },
     {
+        id: '6',
         name: "Capuccino",
         description: "Bebida com canela feita de doses iguais de café, leite e espuma",
         price: 9.90,
@@ -60,6 +66,7 @@ export const coffeeData: Coffee[]  = [
         imgCoffe: type_capuccino
     },
     {
+        id: '7',
         name: "Chocolate Quente",
         description: "Bebida feita com chocolate dissolvido no leite quente e café",
         price: 9.90,
@@ -67,6 +74,7 @@ export const coffeeData: Coffee[]  = [
         imgCoffe: type_chocolate_quente
     },
     {
+        id: '8',
         name: "Cubano",
         description: "Drink gelado de café expresso com rum, creme de leite e hortelã",
         price: 9.90,
@@ -74,6 +82,7 @@ export const coffeeData: Coffee[]  = [
         imgCoffe: type_cubano
     },
     {
+        id: '9',
         name: "Havaiano",
         description: "",
         price: 9.90,
@@ -81,6 +90,7 @@ export const coffeeData: Coffee[]  = [
         imgCoffe: type_havaiano
     },
     {
+        id: '10',
         name: "Irlandês",
         description: "Bebida a base de café, uísque irlandês, açúcar e chantilly",
         price: 9.90,
@@ -88,6 +98,7 @@ export const coffeeData: Coffee[]  = [
         imgCoffe: type_irlandes
     },
     {
+        id: '11',
         name: "Latte",
         description: "Uma dose de café expresso com o dobro de leite e espuma cremosa",
         price: 9.90,
@@ -95,6 +106,7 @@ export const coffeeData: Coffee[]  = [
         imgCoffe: type_latte
     },
     {
+        id: '12',
         name: "Macchiato",
         description: "",
         price: 9.90,
@@ -102,6 +114,7 @@ export const coffeeData: Coffee[]  = [
         imgCoffe: type_macchiato
     },
     {
+        id: '13',
         name: "Mochaccino",
         description: "Café expresso com calda de chocolate, pouco leite e espuma",
         price: 9.90,
@@ -109,6 +122,7 @@ export const coffeeData: Coffee[]  = [
         imgCoffe: type_mochaccino
     },
     {
+        id: '14',
         name: "Árabe",
         description: "Bebida preparada com grãos de café árabe e especiarias",
         price: 9.90,

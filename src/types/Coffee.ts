@@ -4,6 +4,7 @@ type coffeeName = 'Expresso Americano' | 'Árabe' | 'Café Com Leite' | 'Café G
 
 
 export interface Coffee {
+    id: string,
     name: coffeeName;
     description: string;
     type: coffeeType[];
