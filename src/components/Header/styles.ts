@@ -59,7 +59,41 @@ export const BadgeCart = styled.span `
     display: flex;
     align-items: center;
 
+    @media(max-width: 400px){
+        margin-right: 3px;
+    }
+
     svg {
         color: ${props => props.theme["yellow-dark"]};
     }
+
+    div{
+        position: absolute;
+        top: 31px;
+        right: 153px;
+
+        @media(max-width: 768px){
+            right: 44px;
+        }
+
+        @media(max-width: 400px){
+            right: 0px;
+        }
+
+        span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 16px;
+            height: 16px;
+            
+            background-color: ${props => props.theme["yellow-dark"]};
+            border-radius: 50%;
+            color: ${props => props.theme.white};
+            padding: 2px 1px 0 1px;
+        }
+    }
+
+    
 `
