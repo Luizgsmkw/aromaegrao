@@ -10,7 +10,22 @@ interface CartProviderProps {
 
 export const CartProvider = ({children}: CartProviderProps) => {
 
-    const [cartItemsCoffes, setCartItemsCoffes] = useState<Coffee[]>([] as Coffee[]);
+    const [cartItemsCoffes, setCartItemsCoffes] = useState<Coffee[]>(() => {
+         const storedCart = localStorage.getItem('aromaEGrao:cart');
+
+        if(storedCart){
+            try {
+               return JSON.parse(storedCart)
+            } catch (error) {
+                 console.error("Erro ao recuperar o carrinho:", error);
+                localStorage.removeItem('aromaEGrao:cart');
+                return []
+            }
+        }
+
+        return []
+    });
+
 
     const numberOfProducts = cartItemsCoffes.length;
 

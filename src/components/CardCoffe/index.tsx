@@ -1,7 +1,7 @@
 import { Minus, Plus, ShoppingCart } from "phosphor-react";
 import type { Coffee } from "../../types/Coffee"
 import { ButtonCart, ContainerCard, ContainerPrice, CotaninerQuantity, SpanType, TextDescription } from "./styles";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useCart } from "../../hook/useCart";
 
 
@@ -12,7 +12,13 @@ interface CardCoffeeProps {
 export const CardCoffee = ({coffe}: CardCoffeeProps) =>{
 
     const [quantityCoffee, setQauntityCoffee] = useState(0);
-    const {addToCart} = useCart();
+    const {addToCart, cartItems} = useCart();
+
+
+    useEffect(() => {
+        const cartString = JSON.stringify(cartItems);
+        localStorage.setItem('aromaEGrao:cart',cartString);
+    }, [cartItems])
 
     const removeCoffee = () => {
         if(quantityCoffee !== 0){
