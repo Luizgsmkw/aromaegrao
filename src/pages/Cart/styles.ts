@@ -1,6 +1,8 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 
-
+interface PaymentMethodOptionProps {
+  isSelected?: boolean;
+}
 
 export const Container = styled.form `
     display: flex;
@@ -101,6 +103,11 @@ export const ContainerInputs = styled.div `
 
 `
 
+export const DivInput = styled.div `
+    display: flex;
+    flex-direction: column
+`
+
 export const InputCep = styled(InputBase) `
     width: 200px;
     @media(max-width: 650px){
@@ -153,23 +160,32 @@ export const ContainerPay = styled.div `
         flex-direction: column;
         align-items: center;
     }
+`
 
-    button {
-        display: flex;
+export const PaymentMethod = styled.div<PaymentMethodOptionProps> `
+    display: flex;
         align-items: center;
         gap: 12px;
-        cursor: pointer;
         border: none;
         background-color: ${props => props.theme["base-button"]};
         padding: 16px;
         font-size: 14px;
+        ${(props) => props.isSelected && css`
+            border: 1px solid #8047F8; // Cor da borda selecionada
+            background: #EBE5F9;      // Cor de fundo selecionada
+        `}
         @media(max-width: 850px){
             width: 100%;
         }
          @media(max-width: 500px){
             font-size: 10px;
         }
-    }
+
+        input{
+          border: none;
+          background-color: transparent;
+          cursor: pointer;
+        }
 `
 
 export const ContainerCart = styled.div `
@@ -328,4 +344,12 @@ export const ConfirmationButton = styled.button `
     padding: 12px 0 12px 0;
     margin-top: 10.5px;
 
+`
+
+export const TextError = styled.span `
+    color: red;
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: -9px;
 `
